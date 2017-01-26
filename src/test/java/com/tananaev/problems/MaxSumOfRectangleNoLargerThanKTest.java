@@ -15,6 +15,11 @@ public class MaxSumOfRectangleNoLargerThanKTest {
     }
 
     @Test
+    public void maxRange() throws Exception {
+        assertEquals(3, new MaxSumOfRectangleNoLargerThanK().maxRange(a(2, 2, -1), 3));
+    }
+
+    @Test
     public void maxSumSubmatrix() throws Exception {
         assertEquals(3, new MaxSumOfRectangleNoLargerThanK().maxSumSubmatrix(new int[][] { a(2, 2, -1) }, 3));
         assertEquals(2, new MaxSumOfRectangleNoLargerThanK().maxSumSubmatrix(a(a(1, 0, 1), a(0, -2, 3)), 2));
